@@ -1,0 +1,275 @@
+/* * {
+    margin: 0;
+    padding: 0;
+}
+
+.main_box {
+    background-image: url(photo.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+
+.btn_one {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+}
+
+.sidebar_menu {
+    position: fixed;
+    height: 100vh;
+    width: 300px;
+    background-color: rgba(225, 225, 225, 0.1);
+    box-shadow: 0 0 6px rgba(225, 225, 225, 0.5);
+    left: -350px;  
+}
+
+.sidebar_menu .logo {
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    box-shadow: 0 0 4px rgba(225, 225, 225, 0.5);
+
+}
+
+.sidebar_menu .logo a {
+    position: absolute;
+    left: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.sidebar_menu .menu {
+    position: absolute;
+    width: 100%;
+    top: 80px;
+}
+
+.sidebar_menu .menu li {
+    margin-top: 6px;
+    padding: 14px 20px;
+}
+
+.sidebar_menu .btn_two{
+    color: grey;
+    position: absolute;
+    left: 275px;
+    line-height: 60px;
+    opacity: 0;
+}
+
+.sidebar_menu .menu i,
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.sidebar_menu .menu i{
+    padding-right:8px;
+}
+
+.sidebar_menu .social_media{
+    position: absolute;
+    left: 25%;
+    bottom: 50px;
+}
+
+.sidebar_menu .social_media i{
+    color: white;
+    opacity: 0.5;
+    padding: 0 5px;
+
+}
+#check{
+    display: none;
+} */
+
+ *{
+    margin: 0;
+    padding: 0;
+}
+
+.main_box {
+    background-image: url('photo.jpg');
+    height: 100vh;
+    background-size: cover;
+}
+
+.btn_one i {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+    transition: all 0.3s linear;
+}
+
+.sidebar_menu {
+    position: fixed;
+    height: 100vh;
+    width: 300px;
+    background-color: rgba(225, 225, 225, 0.1);
+    box-shadow: 0 0 6px rgba(225, 225, 225, 0.5);
+    left: -320px;
+    transition: all 0.3s linear;
+}
+
+.sidebar_menu .logo {
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    box-shadow: 0 0 6px rgba(225, 225, 225, 0.5);
+    height: 60px;
+}
+
+.sidebar_menu .logo a {
+    position: absolute;
+    left: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.sidebar_menu .menu {
+    position: absolute;
+    width: 100%;
+    top: 80px;
+}
+
+.sidebar_menu .menu li {
+    margin-top: 6px;
+    padding: 16px 20px;
+}
+
+.btn_two i {
+    position: absolute;
+    color: grey;
+    left: 275px;
+    line-height: 60px;
+    transition: all 0.3s linear; 
+    /* opacity: 0; */
+ }
+
+.sidebar_menu .menu i,
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+.sidebar_menu .menu i {
+    padding-right: 8px;
+}
+
+.sidebar_menu .social_media {
+    position: absolute;
+    bottom: 50px;
+    left: 25%;
+}
+
+.sidebar_menu .social_media i {
+    color: white;
+    opacity: 0.5;
+    padding: 0 5px;
+}
+
+#check {
+    display: none;
+}
+
+.sidebar_menu .menu li:hover {
+    box-shadow: 0 0 6px rgba(225, 225, 225, 0.5);
+}
+
+.btn_one i:hover {
+    font-size: 35px;
+    cursor: pointer;
+
+}
+
+.btn_two i:hover {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.sidebar_menu .social_media i:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+#check:checked~.sidebar_menu {
+    left: 0;
+}
+
+#check:checked~.btn_one i {
+    opacity: 0;
+}
+
+#check:checked~.sidebar_menu .btn_two i {
+    opacity: 1;
+}
+
+.sidebar_menu:hover {
+    box-shadow: 0 6px 15px rgb(139, 118, 131);
+}
+
+header{
+    height: 55px;
+    width: 100%;
+    background-color: rgb(255, 255, 255, 0.1);
+}
+
+nav .navbar1{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center; 
+    /* padding: auto 0; */
+     line-height: 50px;
+}
+nav .navbar1 li{
+    height: 55px;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    list-style: none;
+}
+
+#check:checked ~ header{
+    display: none;
+} 
+
+/* nav .navbar1 li:hover{
+    box-shadow: 0 0 6px rgba(225, 225, 225, 0.5);
+}*/
+ 
+li > a:hover{
+    color: rgba(225, 225, 225, 0.5 ); 
+}
+li > a:hover{
+    box-shadow: 0 0 6px rgba(244, 180, 180, 0.5);
+}
+
+h1{
+    color: rgb(215, 147, 239);
+}
+
+section{
+    background-color: rgb(250, 145, 145);
+    height: 50px;
+    font-size: x-large;
+    color: rgb(90, 18, 18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
